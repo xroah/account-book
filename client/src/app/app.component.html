@@ -1,3 +1,9 @@
-<div>Account book</div>
+<div id="main" [id]="id" [style.width]="'300px'" [style.backgroundColor]="'skyblue'">
+    Account book {{title}}
+</div>
+<div>
+    <button (click)="reset()">Reset</button>
+</div>
+<app-main [defaultCount]="count"></app-main>
 
 <router-outlet></router-outlet>
